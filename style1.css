@@ -1,0 +1,153 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand img{
+    height: 100px;
+    width: 100px;
+}
+.navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        text-align: center;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/197491.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+/* carousel */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.tombol1{
+    margin-left: 270px;
+    margin-bottom: 100px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mycrausel img{
+    height: 500px;
+    margin-left: 125px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+}
+
+/* Utiliy */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 750;
+    background-color: white;
+    font-style: bold;
+
+}
+
+/* footer */
+.footer {
+    background-color: rgb(80, 80, 80);
+    
+}
+
+.footer p {
+    color: #ACACAC;
+    margin-top: 10%;
+    margin-left: -45%;
+}
+.footer img{
+    height: 80px;
+    float: left;
+
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid red;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    
+    .jumbotron {
+        height: 640px;
+    }
+    .tombol1{
+        margin-left: 605px;
+        margin-bottom: 100px;
+        border-radius: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #carouselExampleIndicators img{
+        margin-bottom: -100px;
+    }
+    #mycrausel img{
+        height: 500px;
+        margin-left: 472px;
+        margin-bottom: 100px;
+        margin-top: 25px;
+    }
+    
+    .footer p{
+        font-size: 28px;
+        text-align: justify;
+        margin-top: 6%;
+        margin-left: -35%;
+    }
+    .footer img{
+        margin-left: 140px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}

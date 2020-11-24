@@ -1,0 +1,269 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand img{
+    height: 100px;
+    width: 100px;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.navbar-toggler-icon{
+background-color: white;
+}
+/* Mobile Ver */
+
+/* Jumbortron */
+
+body{
+    background-color: black;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.jumbotron {
+    background-image: url(img/160985.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+
+
+/* Jumbotron End */
+
+.navlink{
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+/* Our Team */
+.ourteam{
+    margin-top: 100px;
+    text-align: right;
+}
+
+.workingspace {
+    margin: 20px 0px;
+}
+
+.workingspace h3{
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: white;
+    text-align: left;
+}
+
+.workingspace img{
+    margin-left: 100px;
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.workingspace p {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    margin: 2px 0;
+    text-align: left;
+}
+/* WorkingSpace End */
+
+/* Contact Us */
+.rectangle {
+    margin: 150px 0;
+    border: 2px solid white;
+}
+
+
+.rectangle h3{
+    margin-top: 45px;
+    font-size: 25px;
+    color: white;
+}
+
+.rectangle  img{
+    margin: 20px 30px 20px 40px;
+    width: 20%;
+    height: auto;
+}
+
+.rectangle  img.kedua{
+    margin: 20px 20px 20px 0px;
+}
+/* Contact Us End */
+
+/* Testimonial */
+.testimonial{
+    margin-top: 100px;
+}
+
+.testimonial h5{
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+    font-family: Roboto;
+}
+
+.testimonial figure img{
+    width: 60px;
+    margin: 20px 10px 10px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama{
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.testimonial figure h5{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+}
+
+.testimonial figure p{
+    font-size: 12px;
+    color: #acacac;
+    margin-top: -5px;
+}
+
+.testimonial figcaption{
+    text-align: center;
+}
+/* Testimonial End */
+
+/* Footer */
+.footer {
+    background-color: rgb(80, 80, 80);
+    
+}
+
+.footer p {
+    color: #ACACAC;
+    margin-top: 10%;
+    margin-left: -45%;
+}
+.footer img{
+    height: 80px;
+    float: left;
+
+}
+/* Footer End */
+
+/* Utility */
+.tombol {
+    border-radius: 50px;
+    width: 120px;
+    font-style: italic;
+    font-weight: bold;
+}
+/* Login */
+.kotak {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+/* Login End */
+.tombol2 {
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 750;
+    background-color: white;
+    font-style: bold;
+
+}
+
+/* DESKTOP VER */
+@media (min-width: 992px){
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid red;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .rectangle  img{
+        margin: 20px 30px 20px 40px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .jumbotron {
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace{
+        text-align: left;
+    }
+
+    .workingspace img{
+        margin-left: 250px;
+    }
+
+    .testimonial h5{
+        font-size: 32px;
+    }
+    .footer p{
+        font-size: 28px;
+        text-align: justify;
+        margin-top: 6%;
+        margin-left: -35%;
+    }
+    .footer img{
+        margin-left: 140px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .tombol1{
+        margin-left: 605px;
+        margin-bottom: 100px;
+        border-radius: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .workingspace img{
+        margin-left: 200px;
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
